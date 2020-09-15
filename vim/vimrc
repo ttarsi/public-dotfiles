@@ -1,0 +1,4 @@
+set cc=80
+set mouse=a
+set laststatus=2
+set number
