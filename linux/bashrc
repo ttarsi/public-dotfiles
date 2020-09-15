@@ -1,5 +1,6 @@
 # Vim bindings
 set -o vi
+bindkey -v
 bindkey "^R" history-incremental-search-backward
 bindkey "^L" clear-screen
 bindkey "^A" beginning-of-line
