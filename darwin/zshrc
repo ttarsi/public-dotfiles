@@ -11,6 +11,7 @@ bindkey "^K" kill-line
 # Aliases
 # -- git
 alias ga="git add"
+alias gd="git diff"
 alias gs="git status -s"
 alias gc="git commit"
 alias gp="git push"
