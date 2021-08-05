@@ -9,6 +9,11 @@ bindkey "^E" end-of-line
 bindkey "^K" kill-line
 
 # Aliases
+# -- nvim
+alias v="vim"
+alias vi="vim"
+alias vim="nvim"
+
 # -- git
 alias ga="git add"
 alias gd="git diff"
@@ -26,3 +31,9 @@ alias avg="awk 'BEGIN{t=0;n=0}{t+=\$1;n++}END{printf \"%.2f\n\", t/n}'"
 
 # -- ls
 alias l="ls -althr"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tylertarsi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tylertarsi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc'; fi
