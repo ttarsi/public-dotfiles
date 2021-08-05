@@ -3,7 +3,7 @@ set rtp+=/usr/local/opt/fzf
 
 call plug#begin(stdpath('data') . '/plugged')
 
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'tomlion/vim-solidity'
