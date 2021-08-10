@@ -1,3 +1,9 @@
+# ZSH Settings
+export ZSH="/Users/tylertarsi/.oh-my-zsh"
+ZSH_THEME="nanotech"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
 # Vim bindings
 set -o vi
 bindkey -v
