@@ -26,13 +26,17 @@ alias glr="git pull --rebase"
 alias glpp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # -- tmux
-alias 't=tmux'
-alias 'ta=t attach -t'
-alias 'tn=t new -s'
-alias 'tk=t kill-session -t'
-alias 'tks=t kill-server'
-alias 'ts=t switch -t'
-alias 'tls=t ls'
+alias t="tmux"
+alias ta="t attach -t"
+alias tn="t new -s"
+alias tk="t kill-session -t"
+alias tks="t kill-server"
+alias ts="t switch -t"
+alias tls="t ls"
+
+# -- yarn
+alias ys="yarn start"
+alias yt="yarn test"
 
 # -- awk
 alias total="awk 'BEGIN{t=0}{t+=\$1}END{print t}'"
@@ -41,8 +45,11 @@ alias avg="awk 'BEGIN{t=0;n=0}{t+=\$1;n++}END{printf \"%.2f\n\", t/n}'"
 # -- ls
 alias l="ls -althr"
 
+# -- can't use ctrl-l to clear with tmux-vim bindings
+alias c="clear"
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tylertarsi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tylertarsi/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "/Users/tylertarsi/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/tylertarsi/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc"; fi
