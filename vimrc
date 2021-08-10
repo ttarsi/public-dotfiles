@@ -18,6 +18,7 @@ set relativenumber
 set number
 set expandtab
 set autoindent
+set smartcase
 
 set laststatus=2
 set tabstop=2
