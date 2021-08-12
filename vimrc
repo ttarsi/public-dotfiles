@@ -9,6 +9,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': ':CocInstall coc-tsserver 
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'tomlion/vim-solidity'
 Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
