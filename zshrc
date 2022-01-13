@@ -30,6 +30,7 @@ alias gb="git branch"
 alias glff="git pull --ff-only"
 alias glr="git pull --rebase"
 alias glpp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gclean="git branch --merged | grep -v \* | xargs git branch -D"
 
 # -- tmux
 alias t="tmux"
@@ -59,3 +60,4 @@ if [ -f "/Users/tylertarsi/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/tyle
 
 # The next line enables shell command completion for gcloud.
 if [ -f "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc"; fi
+if [ -e /Users/tylertarsi/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/tylertarsi/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
