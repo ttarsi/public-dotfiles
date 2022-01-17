@@ -61,3 +61,5 @@ if [ -f "/Users/tylertarsi/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/tyle
 # The next line enables shell command completion for gcloud.
 if [ -f "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc"; fi
 if [ -e /Users/tylertarsi/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/tylertarsi/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PATH="$PATH:/Users/tylertarsi/.foundry/bin"
