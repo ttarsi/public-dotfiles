@@ -10,6 +10,7 @@ Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'tomlion/vim-solidity'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
+Plug 'tomlion/vim-solidity'
 
 call plug#end()
 
