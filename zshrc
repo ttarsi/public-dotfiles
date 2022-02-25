@@ -64,3 +64,4 @@ if [ -f "/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc" ]; then . "/User
 if [ -e /Users/tylertarsi/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/tylertarsi/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export PATH="$PATH:/Users/tylertarsi/.foundry/bin"
+. $HOME/.asdf/asdf.sh
