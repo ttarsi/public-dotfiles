@@ -27,6 +27,9 @@ set shiftwidth=2
 
 set mouse=a
 
+autocmd BufNewFile,BufRead,BufEnter Makefile.* set filetype=make
+autocmd Filetype make setlocal tabstop=4 softtabstop=0 shiftwidth=4 noexpandtab
+
 " Fzf mapping
 nnoremap ;b :Buffers<cr>
 nnoremap ;f :Files<cr>
