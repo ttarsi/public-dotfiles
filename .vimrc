@@ -4,12 +4,14 @@ set rtp+=/usr/local/opt/fzf
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-html coc-tabnine coc-styled-components coc-explorer' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-html coc-tabnine coc-styled-components coc-explorer coc-rust-analyzer' }
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'tomlion/vim-solidity'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
