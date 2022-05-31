@@ -4,4 +4,5 @@ ln -fhs $CURRENT_DIRECTORY/.vimrc $HOME/.vimrc
 ln -fhs $CURRENT_DIRECTORY/.zshrc $HOME/.zshrc
 ln -fhs $CURRENT_DIRECTORY/.tmux.conf $HOME/.tmux.conf
 ln -fhs $CURRENT_DIRECTORY/.alacritty.yml $HOME/.alacritty.yml
+ln -fhs $CURRENT_DIRECTORY/coc-settings.json $HOME/.config/nvim/coc-settings.json
 
