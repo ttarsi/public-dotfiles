@@ -12,6 +12,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
