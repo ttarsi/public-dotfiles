@@ -1,6 +1,6 @@
 # ZSH Settings
 export ZSH="/Users/tylertarsi/.oh-my-zsh"
-ZSH_THEME="lambda"
+ZSH_THEME="cypher"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
