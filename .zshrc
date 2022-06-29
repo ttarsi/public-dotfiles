@@ -1,6 +1,6 @@
 # ZSH Settings
 export ZSH="/Users/tylertarsi/.oh-my-zsh"
-ZSH_THEME="cypher"
+ZSH_THEME="eastwood"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
@@ -56,20 +56,18 @@ alias l="ls -althr"
 # -- can't use ctrl-l to clear with tmux-vim bindings
 alias c="clear"
 
-# foundry path
-export PATH="$PATH:/Users/tylertarsi/.foundry/bin"
-
-# asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-# brew path
+# Paths
 export PATH=/opt/homebrew/bin:$PATH
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.foundry/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
 
+# -- asdf: https://formulae.brew.sh/formula/asdf
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tylertarsi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tylertarsi/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tylertarsi/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-export PATH="$HOME/.poetry/bin:$PATH"
