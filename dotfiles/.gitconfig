@@ -2,4 +2,4 @@
 	name = Tyler Tarsi
 	email = tytarsi@gmail.com
 [core]
-  editor = nvim
+	editor = nvim
