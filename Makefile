@@ -14,4 +14,3 @@ stow: ## Run stow to symlink dotfiles to home directory
 .PHONY: unstow
 unstow:  ## Remove stowed links
 	stow --target $(HOME) -D dotfiles
-
