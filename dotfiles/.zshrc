@@ -57,7 +57,7 @@ alias l="ls -althr"
 alias c="clear"
 
 # Paths
-export PATH=$(brew --prefix)/bin:$PATH
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.foundry/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
