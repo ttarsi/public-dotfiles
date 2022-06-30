@@ -9,8 +9,8 @@ help:
 .PHONY: stow
 stow: ## Run stow to symlink dotfiles to home directory
 	@mkdir -p $(CONFIG_DIRS_HOME)
-	stow dotfiles --target $(HOME) --restow
+	stow dotfiles --target ~ --restow
 	
 .PHONY: unstow
 unstow:  ## Remove stowed links
-	stow --target $(HOME) -D dotfiles
+	stow --target ~ -D dotfiles
