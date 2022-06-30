@@ -1,0 +1,5 @@
+[user]
+	name = Tyler Tarsi
+	email = tytarsi@gmail.com
+[core]
+  editor = nvim
