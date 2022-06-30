@@ -1,5 +1,4 @@
 set nocompatible
-set rtp+=/usr/local/opt/fzf
 
 call plug#begin(stdpath('data') . '/plugged')
 
