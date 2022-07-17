@@ -3,3 +3,5 @@
 	email = tytarsi@gmail.com
 [core]
 	editor = nvim
+[push]
+	autoSetupRemote = true
