@@ -61,6 +61,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.foundry/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.radicle/bin:$PATH"
 
 # -- asdf: https://formulae.brew.sh/formula/asdf
 . $(brew --prefix)/opt/asdf/libexec/asdf.sh
