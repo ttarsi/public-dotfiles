@@ -32,7 +32,7 @@ colors:
 
 font:
   normal:
-    family: Space Mono
+    family: Droid Sans Mono Slashed for Powerline
 
 window:
   dimensions:
