@@ -9,6 +9,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-commentary'
 Plug 'yorickpeterse/happy_hacking.vim'
@@ -16,7 +18,6 @@ Plug 'yorickpeterse/happy_hacking.vim'
 call plug#end()
 
 let g:coc_global_extensions = [
-  \ 'coc-explorer',
   \ 'coc-go',
   \ 'coc-json',
   \ 'coc-html',
@@ -41,6 +42,13 @@ set shiftwidth=2
 
 set mouse=a
 
+" fonts and nerdtree
+:nnoremap <space>e :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+set encoding=UTF-8
+set guifont=hack_nerd_font:h21
+
+" filetype settings
 augroup filetype_recognition
   autocmd!
   autocmd BufNewFile,BufRead,BufEnter *.config,*.yaml,*.yml set filetype=yaml
@@ -65,7 +73,6 @@ nnoremap ;f :Files<cr>
 nnoremap ;l :Lines<cr>
 nnoremap ;h :call fzf#vim#helptags()<cr>
 
-:nnoremap <space>e :CocCommand explorer<CR>
 
 let mapleader=' '
 nnoremap <leader>v :vsplit<cr> " easy vertical split
