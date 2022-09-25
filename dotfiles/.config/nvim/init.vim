@@ -14,6 +14,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-commentary'
+Plug 'simrat39/rust-tools.nvim'
 Plug 'yorickpeterse/happy_hacking.vim'
 
 call plug#end()
