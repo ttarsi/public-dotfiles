@@ -63,7 +63,7 @@ augroup indentation_sr
   autocmd!
   autocmd Filetype python,rust
         \ setlocal shiftwidth=4 softtabstop=4 tabstop=8
-  autocmd Filetype make
+  autocmd Filetype make,go,gomod
         \ setlocal tabstop=4 softtabstop=0 shiftwidth=4 noexpandtab
   " Prevent auto-indenting from occuring
   autocmd Filetype yaml setlocal indentkeys-=<:>
