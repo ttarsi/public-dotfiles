@@ -16,7 +16,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-commentary'
 Plug 'simrat39/rust-tools.nvim'
-Plug 'yorickpeterse/happy_hacking.vim'
+Plug 'EdenEast/nightfox.nvim'
 
 call plug#end()
 
@@ -31,7 +31,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ ]
 
-colorscheme happy_hacking
+colorscheme nightfox
 
 set relativenumber
 set number
