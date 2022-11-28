@@ -10,6 +10,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tomlion/vim-solidity'
@@ -75,6 +76,53 @@ nnoremap ;f :Files<cr>
 nnoremap ;l :Lines<cr>
 nnoremap ;h :call fzf#vim#helptags()<cr>
 
+" treesitter setup
+
+function s:init_treesitter()
+  if !exists('g:loaded_nvim_treesitter')
+    echom 'nvim-treesitter does not exist, skipping...'
+    return
+  endif
+lua << EOF
+require('nvim-treesitter.configs').setup({
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = true,
+    disable = { "cairo" },
+  },
+  textobjects = { enable = true },
+  autotag = { enable = true  },
+  ensure_installed = {
+    'bash',
+    'c',
+    'css',
+    'dockerfile',
+    'go',
+    'graphql',
+    'html',
+    'javascript',
+    'jsdoc',
+    'json',
+    'jsonc',
+    'lua',
+    'python',
+    'query',
+    'regex',
+    'rust',
+    'svelte',
+    'toml',
+    'tsx',
+    'typescript',
+    'vim',
+    'yaml',
+}})
+EOF
+endfunction
+
+augroup custom_treesitter
+  autocmd!
+  autocmd VimEnter * call s:init_treesitter()
+augroup end
 
 let mapleader=' '
 nnoremap <leader>v :vsplit<cr> " easy vertical split
