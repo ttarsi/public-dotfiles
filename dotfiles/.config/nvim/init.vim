@@ -22,8 +22,9 @@ call plug#end()
 
 let g:coc_global_extensions = [
   \ 'coc-go',
-  \ 'coc-json',
   \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-python',
   \ 'coc-rust-analyzer',
   \ 'coc-solidity',
   \ 'coc-tabnine',
