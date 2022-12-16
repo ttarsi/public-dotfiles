@@ -57,6 +57,9 @@ alias l="ls -althr"
 # -- can't use ctrl-l to clear with tmux-vim bindings
 alias c="clear"
 
+# -- bat
+alias cat="bat"
+
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
