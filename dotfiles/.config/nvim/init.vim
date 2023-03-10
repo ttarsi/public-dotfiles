@@ -13,7 +13,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tomlion/vim-solidity'
+Plug 'TovarishFin/vim-solidity'
 Plug 'tpope/vim-commentary'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'EdenEast/nightfox.nvim'
