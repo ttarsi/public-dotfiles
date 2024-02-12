@@ -25,6 +25,7 @@ alias ga="git add"
 alias gd="git diff"
 alias gs="git status"
 alias gc="git commit"
+alias gcsm="git commit -S -m"
 alias gck="git checkout"
 alias gp="git push"
 alias gpl="git pull"
@@ -59,6 +60,9 @@ alias c="clear"
 
 # -- bat
 alias cat="bat"
+
+# -- omni
+alias om="cd ~/src/omni/omni"
 
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
