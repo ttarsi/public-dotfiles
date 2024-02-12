@@ -167,3 +167,6 @@ endfunction
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" use correct node version for copilot
+let g:copilot_node_command = "~/.nvm/versions/node/v16.16.0/bin/node""
