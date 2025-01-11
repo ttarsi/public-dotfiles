@@ -3,6 +3,7 @@
 	email = tyler@omni.network
 [core]
 	editor = nvim
+	pager = bat --paging=always --decorations=always --pager='less -R'
 [push]
 	autoSetupRemote = true
 [filter "lfs"]

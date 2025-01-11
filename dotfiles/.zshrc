@@ -53,6 +53,8 @@ alias avg="awk 'BEGIN{t=0;n=0}{t+=\$1;n++}END{printf \"%.2f\n\", t/n}'"
 
 # -- ls
 alias l="ls -althr"
+alias ..="cd .."
+alias ...="cd ..."
 
 # -- can't use ctrl-l to clear with tmux-vim bindings
 alias c="clear"
@@ -62,6 +64,7 @@ alias cat="bat"
 
 # -- omni
 alias om="cd ~/src/omni-network/omni"
+alias tt="cd ~/src/ttarsi/"
 
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
