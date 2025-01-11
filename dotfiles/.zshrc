@@ -2,7 +2,6 @@
 export ZSH="/Users/tylertarsi/.oh-my-zsh"
 ZSH_THEME="eastwood"
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
 
 # Vim bindings
 set -o vi
@@ -62,7 +61,7 @@ alias c="clear"
 alias cat="bat"
 
 # -- omni
-alias om="cd ~/src/omni/omni"
+alias om="cd ~/src/omni-network/omni"
 
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
@@ -71,9 +70,6 @@ export PATH="$HOME/.foundry/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.radicle/bin:$PATH"
 export PATH="$(go env GOPATH)/bin:$PATH"
-
-# -- asdf: https://formulae.brew.sh/formula/asdf
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
@@ -95,3 +91,4 @@ esac
 
 # gssh tool: https://github.com/corverroos/gssh
 export GSSH_USER="tt"
+export GPG_TTY=$(tty)
