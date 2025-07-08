@@ -1,6 +1,7 @@
 [user]
 	name = ttarsi
 	email = tyler@omni.network
+	signingkey = 4FEC60961038B58B
 [core]
 	editor = nvim
 	pager = bat --paging=always --decorations=always --pager='less -R'

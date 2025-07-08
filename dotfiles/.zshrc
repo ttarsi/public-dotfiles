@@ -3,6 +3,8 @@ export ZSH="/Users/tylertarsi/.oh-my-zsh"
 ZSH_THEME="eastwood"
 plugins=(git)
 
+source $ZSH/oh-my-zsh.sh
+
 # Vim bindings
 set -o vi
 bindkey -v
@@ -32,7 +34,7 @@ alias gb="git branch"
 alias glff="git pull --ff-only"
 alias glr="git pull --rebase"
 alias glpp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gclean="git branch --merged | grep -v \* | xargs git branch -D"
+alias gclean="git branch | grep -v -E '^\*|main|master|develop' | xargs -r git branch -D"
 
 # -- tmux
 alias t="tmux"
@@ -63,7 +65,7 @@ alias c="clear"
 alias cat="bat"
 
 # -- omni
-alias om="cd ~/src/omni-network/omni"
+alias om="cd ~/src/omni-network/stack/"
 alias tt="cd ~/src/ttarsi/"
 
 # Paths
@@ -92,6 +94,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+export PATH=$PATH:~/Library/Python/3.9/bin
+
 # gssh tool: https://github.com/corverroos/gssh
 export GSSH_USER="tt"
 export GPG_TTY=$(tty)
+
+# Added by Windsurf
+export PATH="/Users/tylertarsi/.codeium/windsurf/bin:$PATH"
