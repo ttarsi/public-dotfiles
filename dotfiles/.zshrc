@@ -1,5 +1,5 @@
 # ZSH Settings
-export ZSH="/Users/tylertarsi/.oh-my-zsh"
+export ZSH="/Users/ttarsi/.oh-my-zsh"
 ZSH_THEME="eastwood"
 plugins=(git)
 
@@ -16,6 +16,9 @@ bindkey "^E" end-of-line
 bindkey "^K" kill-line
 
 # Aliases
+alias tt="cd ~/src/tt/"
+alias nom="cd ~/src/nom/nom"
+
 # -- nvim
 alias v="vim"
 alias vi="vim"
@@ -63,10 +66,6 @@ alias c="clear"
 
 # -- bat
 alias cat="bat"
-
-# -- omni
-alias om="cd ~/src/omni-network/stack/"
-alias tt="cd ~/src/ttarsi/"
 
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
