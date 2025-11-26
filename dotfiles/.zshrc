@@ -101,3 +101,4 @@ export GPG_TTY=$(tty)
 
 # Added by Windsurf
 export PATH="/Users/tylertarsi/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
