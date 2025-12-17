@@ -1,5 +1,5 @@
 # ZSH Settings
-export ZSH="/Users/ttarsi/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="eastwood"
 plugins=(git)
 
@@ -67,6 +67,10 @@ alias c="clear"
 # -- bat
 alias cat="bat"
 
+alias om="cd ~/src/omni-network/stack/"
+alias nom="cd ~/src/nom"
+alias tt="cd ~/src/ttarsi/"
+
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
@@ -86,7 +90,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="/Users/tylertarsi/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -100,5 +104,7 @@ export GSSH_USER="tt"
 export GPG_TTY=$(tty)
 
 # Added by Windsurf
-export PATH="/Users/tylertarsi/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+source "$HOME/.cargo/env"
