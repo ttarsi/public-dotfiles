@@ -1,8 +1,10 @@
 # ZSH Settings
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="eastwood"
+ZSH_THEME="pure"
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+autoload -U promptinit; promptinit
+prompt pure
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
 # Vim bindings
@@ -94,12 +96,8 @@ esac
 
 export PATH=$PATH:~/Library/Python/3.9/bin
 
-# gssh tool: https://github.com/corverroos/gssh
-export GSSH_USER="tt"
 export GPG_TTY=$(tty)
 
-# Added by Windsurf
-export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 source "$HOME/.cargo/env"
