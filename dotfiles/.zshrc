@@ -17,7 +17,6 @@ bindkey "^K" kill-line
 
 # Aliases
 alias tt="cd ~/src/tt/"
-alias nom="cd ~/src/nom/nom"
 
 # -- nvim
 alias v="vim"
@@ -66,10 +65,6 @@ alias c="clear"
 
 # -- bat
 alias cat="bat"
-
-alias om="cd ~/src/omni-network/stack/"
-alias nom="cd ~/src/nom"
-alias tt="cd ~/src/ttarsi/"
 
 # Paths
 export PATH="/opt/homebrew/bin:$PATH"
